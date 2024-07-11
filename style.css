@@ -14,15 +14,12 @@
 html, body{
     height: 100%;
     width: 100%;
+    user-select: none;
 }
 
 #main{
-    /* background-color: black; */
     z-index: 10;
     position: relative;
-    /* height: 400vh;  */
-    /* pointer-events: none; */
-    /* background-color: #fff4ee; */
 }
 
 .page1{
@@ -46,7 +43,6 @@ html, body{
 }
 
 .navigation p{
-    /* font-size: 1.7vw; */
     font-size: 1.3rem;
 }
 
@@ -71,9 +67,7 @@ html, body{
     justify-content: space-evenly;
     align-items: end;
     position: relative;
-    /* height: 90vh; */
     width: 100%;
-    /* background-color: blue; */
 }
 
 .tag{
@@ -84,13 +78,10 @@ html, body{
 
 .blackbox{
     color: #fff;
-    /* background-color: rgb(255, 89, 0); */
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* height: fit-content; */
-    /* justify-content: center; */
 }
 
 .black{
@@ -129,9 +120,6 @@ html, body{
 }
 
 .earth_animation {
-    /* width: 80px;  */
-    /* height: 80px;  */
-    /* background-color: red; */
     position: relative;
 }
 
@@ -154,7 +142,6 @@ html, body{
     animation-duration: 6s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
-    /* border-radius: 50%; */
 }
 
 .page-body-text{
@@ -179,7 +166,6 @@ html, body{
 }
 
 .page-text{
-    /* overflow-x: auto; */
     position: absolute;
     width: 120vw;
     left: -13vh;
@@ -196,8 +182,6 @@ html, body{
 }
 
 .con{
-    /* white-space: nowrap; */
-    /* position: absolute; */
     left: 0;
     display: inline-block;
     animation-name: movee;
@@ -209,12 +193,8 @@ html, body{
 
 .page-text h1{
     color: white;
-    /* line-height: 18vw; */
-    /* overflow: auto; */
-    /* color: black; */
     font-size: 16vw;
     font-weight: 400;
-    /* font-size: 15em; */
     margin-left: 3vw;
     display: inline-block;
     letter-spacing: -11px;
@@ -243,7 +223,6 @@ html, body{
     justify-content: center;
     flex-direction: column;
     position: relative;
-    /* top: 90vh; */
     background-color: #fff4ee;
 }
 
@@ -309,7 +288,6 @@ html, body{
 .fixed-image{
     height: 41vh;
     width: 76vh;
-    /* background-color: red; */
     border-radius: 20px;
     position: fixed;
     left: 60%;
@@ -318,42 +296,26 @@ html, body{
     display: none;
     background-size: cover;
     box-shadow: #000 0px 0px 15px 2px;
-    /* object-fit: contain; */
 }
 
 .page3{
     min-height: 100vh;
     background-color: #fff4ee;
-    /* position: absolute;
-    top: 190vh; */
-    /* background-color: #503c32; */
-    /* background-color: #b0856f; */
-    /* position: relative; */
-    /* padding: 4vh; */
 }
 
 .page3 p{
     font-size: 3rem;
     font-weight: 400;
-    /* color: white; */
 }
 
 .project{
     height: 25vh;
     width: 100%;
-    /* padding: 0 3rem; */
-    /* background-color: red; */
     border-top: 1px solid black;
     display: flex;
     align-items: center;
-    /* padding: 0 2vw; */
-    /* font-size: 8em; */
     position: relative;
     overflow: hidden;
-}
-
-.projects{
-    /* padding: 0rem 10rem; */
 }
 
 #project-text{
@@ -397,10 +359,6 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #fff4ee;
-    /* position: absolute;
-    top: 390vh; */
-    /* background-color: #503c32; */
-    /* padding: 0 2vw;  */
 }
 
 .skills-text-div{
@@ -412,13 +370,7 @@ html, body{
 }
 
 #skills-text{
-    /* font-size: 1.2em; */
-    /* font-size: 1.2rem; */
-    /* font-weight: 900; */
-    /* letter-spacing: 1px; */
-    /* margin-left: 2rem; */
     position: absolute;
-    /* bottom: 5vh; */
     left: 25vh;
     font-size: 1.2em;
     display: flex;
@@ -437,78 +389,36 @@ html, body{
     align-items: center;
     gap: 3rem;
     margin-top: 5rem;
-    /* background-color: red; */
-    /* height: 100%; */
     height: 70%;
 }
 
 .skills-box-div{
-    /* height: 100%; */
-    /* width: 100px; */
     background-color: blue;
-    /* display: grid;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
-    grid-gap: 60px 60px; */
     display: flex;
     gap: 2rem;
     flex-wrap: nowrap;
-    /* animation-name: move; */
     animation-duration: 50s;
     animation-iteration-count: infinite;
     transition: linear;
-    /* overflow: hidden; */
 }
 
 .skills-box-div2{
     display: flex;
     gap: 2rem;
-    /* flex-wrap: nowrap; */
 }
 
-/* @keyframes move{
-    0%{
-        transform: translateX(0%);
-    }
-
-    100%{
-        transform: translateX(120%);
-    }
-} */
-
 .skills-div{
-    /* background-color: white; */
     height: 150px;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 19px;
-    /* border: solid 1px #000; */
-    /* box-shadow: #000 5px 5px 5px; */
-    /* transition: transform 0.4s; */
-    /* height: 10px; */
-    /* width: 10px; */
 }
-
-/* .skills-div:hover{
-    box-shadow: #503c32 6px 4px 6px;
-    transform: scale(1.125);
-} */
 
 .skill-div-images{
     height:100px;
-    /* width: 100px; */
 }
-
-/* .page5{
-    height: 80vh;
-    width: 100%;
-    z-index: -9;
-    position: relative;
-    pointer-events: none;
-    background-color: dodgerblue;
-} */
 
 #footer{
     
@@ -516,10 +426,6 @@ html, body{
     bottom: 0;
     z-index: -9;
     width: 100%;
-    /* bottom: 0; */
-    /* background-color: #503c32; */
-    /* pointer-events: none; */
-    /* align-items: end; */
     height: 100vh;
     background-color: rgb(26, 26, 26);
     color: white;
@@ -530,14 +436,12 @@ html, body{
 
 .footer-upper{
     height: 90%;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer-upper-inside{
-    /* background-color: blue; */
     width: 70%;
 }
 
@@ -545,7 +449,6 @@ html, body{
     border-radius: 50% !important;
     position: absolute;
     right: -30%;
-    /* top: 9vh; */
     bottom: -27vh;
 }
 
@@ -562,7 +465,6 @@ html, body{
     background-color: rgb(26, 26, 26);
     border: solid #62626286 1px;
     color: white;
-    /* padding: 30px; */
     border-radius: 3rem;
     font-size: 1.2rem;
     position: relative;
@@ -582,8 +484,6 @@ html, body{
     left: 0;
     bottom: -100%;
     border-radius: 50%;
-    /* color: #000; */
-    /* z-index: -2; */
 }
 
 .btn-span:hover::after{
@@ -591,22 +491,13 @@ html, body{
     bottom: 0%;
     border-radius: 0%;
     transition-duration: 0.4s;
-    /* z-index: 100; */
     mix-blend-mode: difference;
 }
-
-
-/* button */
-
-
-
 
 .round-image{
     object-fit: cover;
     border-radius: 50%;
-    /* position: absolute; */
     background-color: wheat;
-    /* left: 2; */
     display: inline;
 }
 
@@ -624,14 +515,12 @@ html, body{
 .footer-lower{
     height: 10%;
     padding: 3em;
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-links{
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -662,7 +551,6 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: rgb(26, 26, 26);
-    /* background-color: #000; */
     position: fixed;
     z-index: 999;
     top: 0;
@@ -671,7 +559,6 @@ html, body{
     justify-content: center;
     align-items: center;
     color: #fff;
-    /* font-size: 5vw; */
 }
 
 .loader-text{
