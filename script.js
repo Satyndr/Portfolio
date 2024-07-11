@@ -1,7 +1,9 @@
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
-    smooth: true
+    smooth: true,
+    multiplier: 0.8,
+    getSpeed: true,
 });
 
 var elemC = document.querySelector(".projects");
@@ -14,6 +16,10 @@ elemC.addEventListener("mouseleave", function(){
     fixed.style.display = "none";
 })
 
+fixed.addEventListener("mouseenter", function(){
+    fixed.style.display = "block";
+})
+
 var elems = document.querySelectorAll(".project");
 elems.forEach(function(e){
     e.addEventListener("mouseenter", function(){
@@ -22,18 +28,15 @@ elems.forEach(function(e){
     })
 })
 
-
-//footer made accessible
-// page5 = document.querySelector(".page5");
-// foot = document.querySelector('#footer');
-
-// page5.addEventListener("mouseenter", function(){
-//     foot.style.zIndex = "100";
-// })
-// page5.addEventListener("mouseleave", function(){
-//     foot.style.zIndex = "-1";
-// })
-
+//earth video delay
+document.addEventListener('DOMContentLoaded', (event) => {
+    const video = document.getElementById('myVideo');
+    const delay = 4000; // Delay in milliseconds (e.g., 5000 ms = 5 seconds)
+    
+    setTimeout(() => {
+        video.play();
+    }, delay);
+});
 
 //loader animation
 
@@ -43,3 +46,28 @@ setTimeout(function(){
     loader.style.top = "-100%";
 }, 4000)
 
+//Link opener
+document.getElementById("emailButton").addEventListener("click", function() {
+    window.location.href = "mailto:satyendrakumar.contact@gmail.com";
+});
+document.getElementById("githubButton").addEventListener("click", function() {
+    window.location.href = "http://github.com/Satyndr";
+});
+
+//about me animation
+// var aboutme = document.querySelector('.aboutme')
+// document.getElementById("aboutmeButton").addEventListener("click", function() {
+//     aboutme.style.display = "block";
+// });
+
+document.getElementById('aboutmeButton').addEventListener('click', function() {
+    var aboutMeDiv = document.querySelector('.aboutme');
+    var cseDiv = document.querySelector('.page2-text');
+    if (aboutMeDiv.classList.contains('visible')) {
+        aboutMeDiv.classList.remove('visible');
+        cseDiv.classList.remove('up');
+    } else {
+        aboutMeDiv.classList.add('visible');
+        cseDiv.classList.add('up');
+    }
+});

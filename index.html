@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    <!-- <div id="loader">
+    <div id="loader">
         <h1 class="loader-text">Welcome</h1>
         <h1 class="loader-text">to my</h1>
         <h1 class="loader-text">Portfolio</h1>
-    </div> -->
+    </div>
 
     <div class="fixed-image"></div>
 
@@ -24,11 +24,11 @@
                 <p class="magnet">Code by Satendra</p>
     
                 <div>
-                    <ul class="navigation-li">
+                    <!-- <ul class="navigation-li">
                         <li>Work</li>
                         <li>About</li>
                         <li>Contact</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </nav>
     
@@ -41,7 +41,7 @@
                         <div class="black-round">
                             <div class="round">
                                 <div class="earth_animation">
-                                    <video class="earth_video" src="assets/earthy.mp4" autoplay muted ></video>
+                                    <video id="myVideo" class="earth_video" src="assets/earthy.mp4" muted ></video>
                                 </div>
                             </div>
                         </div>
@@ -77,15 +77,35 @@
             </div>
         </div>
 
-        <div class="content" data-scroll data-scroll-speed="3" data-scroll-delay="0.2" data-scroll-direction="vertical">
+        <div class="contentt" data-scroll data-scroll-speed="3" data-scroll-delay="0.2" data-scroll-direction="vertical">
 
     
         <div class="page2" >
-            
+
             <p class="page2-text">An CSE Undergraduate Web Developer trying to impress by his Coding Skills.</p>
+
+            <div class="aboutme">
+                <p class="aboutme-para">
+                    Hello! I'm a passionate Full Stack Web Developer specializing in the MERN stack. With a keen eye for design and a knack for creating seamless user experiences, I excel at developing robust APIs and crafting innovative, user-friendly interfaces. My journey in web development is fueled by a love for technology and a commitment to delivering high-quality, scalable solutions.
+                </p>
+                <br>
+                <p class="aboutme-para">
+                    Whether it's bringing a creative UI to life or architecting a reliable backend, I thrive on turning ideas into reality. I'm dedicated to continuous learning and staying updated with the latest industry trends, ensuring that the solutions I provide are not only cutting-edge but also efficient and effective.
+                </p>
+                <br>
+                <p class="aboutme-para">
+                    Let's create something amazing together!
+                </p>
+            </div>
             
+            <button id="aboutmeButton" class="btn btn-round" data-scroll data-scroll-speed="4" data-scroll-delay="0.1" data-scroll-direction="vertical">
+                <div class="btn-span btn-span-round">
+                    <p>About me</p>
+                </div>
+            </button>
+
             <div id="featured-text">
-                <div id="circle"></div>
+                <div class="circle"></div>
                 <p>FEATURED PROJECTS</p>
             </div>
 
@@ -137,14 +157,7 @@
             </div>
 
             <div class="skills-box">
-                <div class="skills-box-div2" data-scroll data-scroll-speed="-4" data-scroll-delay="0.2" data-scroll-direction="horizontal">
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/react.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/taliwind.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/bootstrap.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/mongodb-leaf.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/nodejs3.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/express-js2.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/javascript.png" alt=""></div>
+                <div class="skills-box-div2" data-scroll data-scroll-speed="-4" data-scroll-delay="1" data-scroll-direction="horizontal">
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/python.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/c++.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/c.png" alt=""></div>
@@ -159,18 +172,10 @@
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/nodejs3.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/express-js2.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/javascript.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/python.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/c++.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/c.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/html.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/css.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/github.png" alt=""></div>
-                    <div class="skills-div"><img class="skill-div-images" src="./assets/skills/socket-io.png" alt=""></div>
-
                     
                 </div>
 
-                <div class="skills-box-div2" data-scroll data-scroll-speed="4" data-scroll-delay="0.2" data-scroll-direction="horizontal">
+                <div class="skills-box-div2" data-scroll data-scroll-speed="4" data-scroll-delay="1" data-scroll-direction="horizontal">
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/react.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/taliwind.png" alt=""></div>
                     <div class="skills-div"><img class="skill-div-images" src="./assets/skills/bootstrap.png" alt=""></div>
@@ -190,8 +195,6 @@
         </div>
 
         </div>
-
-        <!-- <div class="page5"></div> -->
         
         <div id="footer">
 
@@ -201,7 +204,12 @@
                     <h1>Get in touch!</h1>
                     
                     <div class="line"></div>
-                    <button class="btn">
+                    <!-- <a href="https://google.com/" class="" id="emailButton">
+                        <div class="">
+                            <p>Saytuu</p>
+                        </div>
+                    </a> -->
+                    <button class="btn" id="emailButton">
                         <div class="btn-span">
                             <p>satyendrakumar.contact@gmail.com</p>
                         </div>
@@ -211,13 +219,18 @@
                             +91 8521709794
                         </div>
                     </button>
+                    <button class="btn" id="githubButton">
+                        <div class="btn-span">
+                            Github
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="footer-lower">
                 <div class="footer-links">
                     <p>SOCIALS</p>
                     <div class="links">
-                        <a href="">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/satendra-kumar8521/">LinkedIn</a>
                         <a href="">Instagram</a>
                         <a href="">Twitter</a>
                     </div>
@@ -225,9 +238,9 @@
                 <div class="footer-links">
                     <p>CODING PLATFROMS</p>
                     <div class="links">
-                        <a href="">Leetcode</a>
-                        <a href="">Hackerrank</a>
-                        <a href="">CodingNinjas</a>
+                        <a href="https://leetcode.com/u/Satyndrr/">Leetcode</a>
+                        <a href="https://www.hackerrank.com/profile/Satyndr">Hackerrank</a>
+                        <a href="https://www.naukri.com/code360/profile/Satyndr">CodingNinjas</a>
                     </div>
                 </div>
             </div>
@@ -240,6 +253,7 @@
     <!-- <div class="page5"></div> -->
 
     
+    <script src="./magnet.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="./script.js"></script>
