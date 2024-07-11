@@ -19,6 +19,9 @@ elemC.addEventListener("mouseleave", function(){
 fixed.addEventListener("mouseenter", function(){
     fixed.style.display = "block";
 })
+fixed.addEventListener("mouseleave", function(){
+    fixed.style.display = "none";
+})
 
 var elems = document.querySelectorAll(".project");
 elems.forEach(function(e){
